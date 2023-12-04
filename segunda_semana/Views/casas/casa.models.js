@@ -98,20 +98,7 @@ class Casas_Model {
       })
     }
   
-    verifica_correo() {
-      var Correo = this.Correo;
-      $.post("../../Controllers/usuario.controller.php?op=verifica_correo", { Correo: Correo }, (res) => {
-        res = JSON.parse(res);
-        if (parseInt(res.cedula_repetida) > 0) {
-          $('#CorreoRepetido').removeClass('d-none');
-          $('#CorreoRepetido').html('El correo ingresado, ya exite en la base de datos');
-          $('button').prop('disabled', true);
-        } else {
-          $('#CorreoRepetido').addClass('d-none');
-          $('button').prop('disabled', false);
-        }
-      })
-    }
+   
   
     limpia_Cajas() {
       document.getElementById("Propietario").value = "";
@@ -121,7 +108,7 @@ class Casas_Model {
       document.getElementById("Telefono").value = "";
       document.getElementById("Identeificador").value = "";
       document.getElementById("Estado").value = "";
-      $("#Modal_usuario").modal("hide");
+      $("#Modal_casas").modal("hide");
     }
   }
   
