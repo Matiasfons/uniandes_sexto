@@ -62,6 +62,7 @@ var guardaryeditar = (e) => {
 
 
 var editar = (ID_profesor) => {
+    generar();
     var uno = new ProfesoresModel(
         ID_profesor,
         '',

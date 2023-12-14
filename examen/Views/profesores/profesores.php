@@ -130,7 +130,6 @@
 
 <script>
     async function generar() {
-        // Obtenemos el elemento select
         const select = document.getElementById("ID_escuela");
         select.innerHTML = "";
 
@@ -146,10 +145,8 @@
                 text: element.Nombre
             }, );
         });
-        // Creamos un array con las opciones que queremos agregar
 
 
-        // Agregamos las opciones al elemento select
         for (const option of options) {
             const newOption = document.createElement("option");
             newOption.value = option.value;
