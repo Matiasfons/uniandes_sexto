@@ -45,6 +45,22 @@
               </a>
             </li>
             <li class="sidebar-item">
+              <a class="sidebar-link" href="escuelas/escuela.php" target="base" aria-expanded="false">
+                <span>
+                  <i class="ti ti-alert-circle"></i>
+                </span>
+                <span class="hide-menu">Escuelas</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="profesores/profesores.php" target="base" aria-expanded="false">
+                <span>
+                  <i class="ti ti-alert-circle"></i>
+                </span>
+                <span class="hide-menu">Profesores</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
               <a class="sidebar-link" href="clientes/clientes.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
